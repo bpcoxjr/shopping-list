@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Shopping List</title>
+	<link href="css/style.css" rel="stylesheet" type="css/text">
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,100' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/shop.js"></script>
+</head>
+<body>
+<header class="banner-section">
+	<ul>
+		<li><img src="images/basket.png"></li>
+		<li><h1>Shopping List</h1></li>
+		<li><img src="images/basket.png"></li>
+	</ul>
+</header>	
+<section class="input-section">
+	<p>Add items to your list, one at at time, check them off as you go, and delete items if you no longer need them.</p>
+	<div class="list">
+		<input id="newItem" type="text" maxlength="25"  placeholder="Go ahead, add an item...">
+		<input id="add" type="submit" id="addedItem" value="Add">
+	</div>
+</section>
+<hr>
+<section class="list-section">
+	<ul id="itemList">
+		<li>
+		<button class="check-mark">&#10003;</button>
+		<span class="list">eggs</span>
+		<button class="delete-item">&#10005;</button>
+		</li>
+		<li class="tick-off">
+			<button class="check-mark">&#10003;</button>
+			<span class="list">bacon</span>
+			<button class="delete-item">&#10005;</button>
+		</li>
+	</ul>
+</section>
+<section class="clear-section">
+	<button id="resetButton" type="reset" onclick="">Clear List</button>
+</section>
+</body>
+</html>
