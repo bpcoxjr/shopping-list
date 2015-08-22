@@ -545,6 +545,7 @@ hr {
 
 li {
 	font-size: 1.25em;
+	padding-bottom: 2em;
 }
 
 .tick-off {
@@ -553,6 +554,7 @@ li {
 	webkit-font-smoothing: antialiased;
 	font-weight: 300;
 	font-size: 1.25em;
+	margin-bottom: 5px;
 }
 
 .tick-off .list {
@@ -620,7 +622,7 @@ li, .tick-off .list {
 	border: none;
 	font-family: 'Raleway', sans-serif;
 	font-weight: 300;
-	border-radius: 5px;
+	border-radius: 10px;
 	margin-bottom: 10em;
 }
 
