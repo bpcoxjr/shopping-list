@@ -25,22 +25,22 @@ function tickItem(){
 
 
 /*Clears all items from list when user clicks 'clear list' button*/
-	$(document).on('click', '#resetButton', function(){
-		$('#itemList').empty();
-	});
+$(document).on('click', '#resetButton', function(){
+	$('#itemList').empty();
+});
 
 /*Allows user to add items to list*/
 $(function(){
-		var add = $('#addItem');
-		var newItem = $('#newItem');
-		var list = $('#itemList');
+	var add = $('#addItem');
+	var newItem = $('#newItem');
+	var list = $('#itemList');
 
-		add.on('click', addListItem);
-		list.on('click', '.check-mark', tickItem);
-		list.on('click', '.delete-item', deleteItem);
-		newItem.on('keypress', function(e){
-			if(e.which == 13) {
-				addListItem();
-			}
-		});		
+	add.on('click', addListItem);
+	list.on('click', '.check-mark', tickItem);
+	list.on('click', '.delete-item', deleteItem);
+	newItem.on('keypress', function(e){
+		if(e.which == 13) {
+			addListItem();
+		}
+	});		
 });
